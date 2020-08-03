@@ -16,8 +16,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-	compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.3.2.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
