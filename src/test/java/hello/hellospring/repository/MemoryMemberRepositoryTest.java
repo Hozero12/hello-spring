@@ -1,4 +1,4 @@
-package repository;
+package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
@@ -29,7 +29,7 @@ public class MemoryMemberRepositoryTest {
         repository.save(member);
 
         Member result = repository.findById(member.getId()).get();
-        assertThat(member).isEqualTo(result);
+        assertThat(result).isEqualTo(member);
     }
 
     @Test
